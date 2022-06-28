@@ -1,0 +1,73 @@
+/* Write CSS here */
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  justify-content: flex-start;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  }
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding: 20px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+img {
+  height: 40px;
+  padding: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.start-button {
+  background-color: #1db05f;
+}
+.stop-button {
+  background-color: #ef0d36;
+}
+.reset-button {
+  background-color: #eaa800;
+}
